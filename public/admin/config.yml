@@ -1,0 +1,43 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "players"
+    label: "Players"
+    folder: "src/content/players"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Position", name: "position", widget: "select", options: ["Forward", "Defense", "Goalie"]}
+      - {label: "Team", name: "team", widget: "string"}
+      - {label: "Jersey Number", name: "number", widget: "number"}
+      - {label: "Height", name: "height", widget: "string"}
+      - {label: "Weight", name: "weight", widget: "string"}
+      - {label: "Birth Date", name: "birthDate", widget: "date"}
+      - {label: "Player Image", name: "image", widget: "image", required: false}
+      - {label: "Scout Evaluation", name: "scoutEvaluation", widget: "markdown"}
+      - label: "Statistics"
+        name: "statistics"
+        widget: "object"
+        fields:
+          - {label: "Games Played", name: "gamesPlayed", widget: "number"}
+          - {label: "Goals", name: "goals", widget: "number"}
+          - {label: "Assists", name: "assists", widget: "number"}
+          - {label: "Points", name: "points", widget: "number"}
+          - {label: "Plus/Minus", name: "plusMinus", widget: "number"}
