@@ -46,9 +46,9 @@ export function Pricing() {
               <div className="absolute top-0 right-0 bg-yellow-400 text-black text-sm font-semibold px-3 py-1 rounded-tr-lg rounded-bl-lg">
                 MOST POPULAR
               </div>
-              <h3 className="text-2xl font-bold mb-4">General Tier</h3>
+              <h3 className="text-2xl font-bold mb-4">Scout</h3>
               <div className="mb-6">
-                <span className="text-4xl font-bold">$99.99</span>
+                <span className="text-4xl font-bold">$19.99</span>
                 <span className="text-gray-200">/month</span>
               </div>
               <p className="text-gray-200 mb-6">Ideal for scouts and analysts.</p>
@@ -77,9 +77,9 @@ export function Pricing() {
 
             {/* Professional Tier */}
             <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-100">
-              <h3 className="text-2xl font-bold mb-4">Professional Tier</h3>
+              <h3 className="text-2xl font-bold mb-4">General Manager</h3>
               <div className="mb-6">
-                <span className="text-4xl font-bold">$500</span>
+                <span className="text-4xl font-bold">$49.99</span>
                 <span className="text-gray-600">/month</span>
               </div>
               <p className="text-gray-600 mb-6">For professional teams and organizations.</p>
